@@ -17,20 +17,22 @@
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   <meta name="theme-color" content="#f9fafb">
   
-  <title>你好世界喵（第一次尝试） - 七斗的猫窝</title>
+  <title>论python本地Google Earth Engine api到底该如何配置 - 七斗的猫窝</title>
 
   
-    <meta name="description" content="LSTM（长短时记忆网络） RNN：实际上就是一个带有 记忆的时间序列的预测模型 缺点：梯度消失和梯度爆炸 ↓ LSTM：LSTM（长短时记忆网络）是一种常用于处理序列数据的深度学习模型，与传统的 RNN（循环神经网络）相比，LSTM引入了三个门（ 输入门、遗忘门、输出门）和一个 细胞状态（cell state）， 使得LSTM能够更好地处理序列中的长期依赖关系。 遗忘门：通过x和ht的操作，并经">
+    <meta name="description" content="论python本地Google Earth Engine api到底该如何配置基础环境配置建议使用conda。系统为win11 conda的安装和环境变量配置不多讲述因为现有教程都配的出来 1conda create --name GEE#conda 新建一个名叫GEE的环境  1conda activate GEE#进入GEE环境  1conda install -c conda-forge e">
 <meta property="og:type" content="article">
-<meta property="og:title" content="你好世界喵（第一次尝试）">
-<meta property="og:url" content="http://example.com/2025/01/31/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C%E5%96%B5/index.html">
+<meta property="og:title" content="论python本地Google Earth Engine api到底该如何配置">
+<meta property="og:url" content="http://example.com/2025/03/13/%E8%AE%BApython%E6%9C%AC%E5%9C%B0Google%20Earth%20Engine%20api%E5%88%B0%E5%BA%95%E8%AF%A5%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE/index.html">
 <meta property="og:site_name" content="七斗的猫窝">
-<meta property="og:description" content="LSTM（长短时记忆网络） RNN：实际上就是一个带有 记忆的时间序列的预测模型 缺点：梯度消失和梯度爆炸 ↓ LSTM：LSTM（长短时记忆网络）是一种常用于处理序列数据的深度学习模型，与传统的 RNN（循环神经网络）相比，LSTM引入了三个门（ 输入门、遗忘门、输出门）和一个 细胞状态（cell state）， 使得LSTM能够更好地处理序列中的长期依赖关系。 遗忘门：通过x和ht的操作，并经">
+<meta property="og:description" content="论python本地Google Earth Engine api到底该如何配置基础环境配置建议使用conda。系统为win11 conda的安装和环境变量配置不多讲述因为现有教程都配的出来 1conda create --name GEE#conda 新建一个名叫GEE的环境  1conda activate GEE#进入GEE环境  1conda install -c conda-forge e">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2025-01-30T17:02:45.000Z">
-<meta property="article:modified_time" content="2025-02-24T06:42:04.618Z">
+<meta property="og:image" content="https://s21.ax1x.com/2025/03/13/pEU4O7F.png">
+<meta property="article:published_time" content="2025-03-13T09:44:00.000Z">
+<meta property="article:modified_time" content="2025-03-13T09:44:54.860Z">
 <meta property="article:author" content="QD">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s21.ax1x.com/2025/03/13/pEU4O7F.png">
   
   
   
@@ -76,45 +78,39 @@
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">Home</a>
 <span class="sep"></span><a class="cap breadcrumb" href="/">Blog</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">Posted on: <time datetime="2025-01-30T17:02:45.000Z">2025-01-31</time></span><span class="sep updated"></span><span class="text updated">Updated on: <time datetime="2025-02-24T06:42:04.618Z">2025-02-24</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">Posted on: <time datetime="2025-03-13T09:44:00.000Z">2025-03-13</time></span><span class="sep updated"></span><span class="text updated">Updated on: <time datetime="2025-03-13T09:44:54.860Z">2025-03-13</time></span></div></div></div>
     
     <div class="bottom only-title">
       
       <div class="text-area">
-        <h1 class="text title"><span>你好世界喵（第一次尝试）</span></h1>
+        <h1 class="text title"><span>论python本地Google Earth Engine api到底该如何配置</span></h1>
         
       </div>
     </div>
     
   </div>
-  </div><article class="md-text content"><p>LSTM（长短时记忆网络）</p>
-<p>RNN：实际上就是一个带有 记忆的时间序列的预测模型</p>
-<p>缺点：梯度消失和梯度爆炸</p>
-<p>↓</p>
-<p>LSTM：LSTM（长短时记忆网络）是一种常用于处理序列数据的深度学习模型，与传统的 RNN（循环神经网络）相比，LSTM引入了三个门（ 输入门、遗忘门、输出门）和一个 细胞状态（cell state），</p>
-<p>使得LSTM能够更好地处理序列中的长期依赖关系。</p>
-<p>遗忘门：通过x和ht的操作，并经过sigmoid函数，得到0,1的向量，0对应的就代表之前的记忆某一部分要忘记，1对应的就代表之前的记忆需要留下的部分 &#x3D;&#x3D;&#x3D;&gt;代表复习上一门线性代数所包含的记忆，通过遗忘门，忘记掉和下一门高等数学无关的内容（比如矩阵的秩）</p>
-<p>输入门：通过将之前的需要留下的信息和现在需要记住的信息相加，也就是得到了新的记忆状态。&#x3D;&#x3D;&#x3D;&gt;代表复习下一门科目高等数学的时候输入的一些记忆（比如洛必达法则等等），那么已经线性代数残余且和高数相关的部分（比如数学运算）+高数的知识&#x3D;新的记忆状态</p>
-<p>输出门：整合，得到一个输出&#x3D;&#x3D;&#x3D;&gt;代表高数所需要的记忆，但是在实际的考试不一定全都发挥出来考到100分。因此，则代表实际的考试分数</p>
-<p>LSTM确实是可以在一定程度上解决梯度消失和梯度爆炸的问题</p>
-<p>ResNet（残差神经网络）</p>
-<p>残差神经网络的主要贡献是发现了“退化现象（Degradation）”，并针对退化现象发明了 “直连边&#x2F;短连接（Shortcut connection）”</p>
-<p>简单地增加深度，会导致梯度弥散或梯度爆炸。</p>
-<p>ResNet论文提出通过数据的预处理以及在网络中使用 BN（Batch Normalization）层来解决</p>
-<p>为了解决深层网络中的退化问题，可以人为地让神经网络某些层跳过下一层神经元的连接，隔层相连，弱化每层之间的强联系。这种神经网络被称为残差网络 (ResNets)</p>
-<p>U-net</p>
-<p>语义分割的目的是判断每个像素点的类别，进行精确的分割</p>
-<p>eg自动驾驶中的分割任务的分割结果，可以从一张图片中有效的识别出汽车（深蓝色），行人（红色），红绿灯（黄色），道路（浅紫色）等</p>
-<p>编码器中的卷积逐步提取特征（深度增加），maxpool降低空间分辨率（高宽减少）</p>
-<p>解码器通过上采样（反卷积）高宽加倍，深度减半；通过卷积降低拼接特征的深度</p>
-<p>UNet的关键创新是在解码器中引入了跳跃连接（Skip Connection），即将编码器中的特征图</p>
-<p>与解码器中对应的特征图进行连接。这种跳跃连接可以帮助解码器更好地利用不同层次的特征信息，从而提高图像分割的准确性和细节保留能力</p>
-<p>GAN（生成对抗网络）</p>
-<p>生成对抗网络其实是两个网络的组合：生成网络(Generator)负责生成模拟数据；判别网络(Discriminator)负责判断输入的数据是真实的还是生成的。生成网络要不断优化自己生成的数据让判别网络判断不出来，判别网络也要优化自己让自己判断得更准确。二者关系形成对抗，因此叫对抗网络。</p>
-<p>*G是一个生成图片的网络 它接收一个随机的噪声z,通过这个噪声生成图片 叫做G(z)</p>
-<p>*D是一个判别网络 判别一张图片是不是真实的 它的输入参数是x x代表一张图片 输出D(x)代表x为真实图片的概率 如果为1 那就代表100%是真实的图片 如果输出为0 那就代表不可能是真实的图片</p>
-<p>在训练过程中 将随机噪声输入生成网络G,得到生成的图片; 判别器接收生成的图片和真实的图片 并尽量将两者区分开来 在这个计算过程中 能否正确区分生成的图片和真实的图片将作为判别器的损失 而能否生成近似真实的图片并使得判别器将生成的个图片判定为真将作为生成器的损失 </p>
-<p>生成器的损失是通过判别器的输出来计算的 而判别器的输出是一个概率值</p>
+  </div><article class="md-text content"><h1 id="论python本地Google-Earth-Engine-api到底该如何配置"><a href="#论python本地Google-Earth-Engine-api到底该如何配置" class="headerlink" title="论python本地Google Earth Engine api到底该如何配置"></a>论python本地Google Earth Engine api到底该如何配置</h1><h2 id="基础环境配置"><a href="#基础环境配置" class="headerlink" title="基础环境配置"></a>基础环境配置</h2><p>建议使用conda。系统为win11</p>
+<p>conda的安装和环境变量配置不多讲述因为现有教程都配的出来</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create --name GEE#conda 新建一个名叫GEE的环境</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda activate GEE#进入GEE环境</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda install -c conda-forge earthengine-api#此时你要观察前面的环境是否已经进入GEE</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">earthengine authenticate# 获取凭据，你会看到浏览器跳出窗口，按指令操作即可</span><br></pre></td></tr></table></figure>
+
+<h2 id="测试API"><a href="#测试API" class="headerlink" title="测试API"></a>测试API</h2><p>从GEE环境启动python</p>
+<figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python</span><br></pre></td></tr></table></figure>
+
+<p>运行测试代码</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> ee</span><br><span class="line"></span><br><span class="line"><span class="comment"># Initialize the Earth Engine module.</span></span><br><span class="line"><span class="comment"># ee.Initialize()##!!!!!!注意这里大部分教程都是这里有问题！！！！！！！应该是</span></span><br><span class="line">ee.Initiaialize(project=<span class="string">&#x27;your_name&#x27;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># Print metadata for a DEM dataset.</span></span><br><span class="line"><span class="built_in">print</span>(ee.Image(<span class="string">&#x27;USGS/SRTMGL1_003&#x27;</span>).getInfo())</span><br></pre></td></tr></table></figure>
+
+<p>实例代码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">import ee</span><br><span class="line">import folium</span><br><span class="line"></span><br><span class="line"># 初始化GEE</span><br><span class="line">ee.Initialize(&#x27;project=&#x27;ee-your_name&#x27;)</span><br><span class="line"></span><br><span class="line"># 创建一个地图对象，设置中心点和缩放级别</span><br><span class="line">map_center = [1.3521, 103.8198]  # 新加坡的经纬度</span><br><span class="line">zoom_level = 10</span><br><span class="line"></span><br><span class="line"># 加载一个图层，例如显示全球的陆地覆盖</span><br><span class="line">landcover = ee.Image(&#x27;MODIS/006/MCD12Q1/2019_01_01&#x27;).select(&#x27;LC_Type1&#x27;)</span><br><span class="line"></span><br><span class="line"># 定义一个调色板来显示不同类型的陆地覆盖</span><br><span class="line">landcover_vis = &#123;</span><br><span class="line">    &#x27;min&#x27;: 0,</span><br><span class="line">    &#x27;max&#x27;: 17,</span><br><span class="line">    &#x27;palette&#x27;: [</span><br><span class="line">        &#x27;05450a&#x27;, &#x27;086a10&#x27;, &#x27;54a708&#x27;, &#x27;78d203&#x27;, &#x27;009900&#x27;, &#x27;c6b044&#x27;, &#x27;dcd159&#x27;,</span><br><span class="line">        &#x27;dade48&#x27;, &#x27;fbff13&#x27;, &#x27;b6ff05&#x27;, &#x27;27ff87&#x27;, &#x27;c24f44&#x27;, &#x27;a5a5a5&#x27;, &#x27;ff6d4c&#x27;,</span><br><span class="line">        &#x27;69fff8&#x27;, &#x27;f9ffa4&#x27;, &#x27;1c0dff&#x27;</span><br><span class="line">    ],</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"># 将陆地覆盖图层添加到地图</span><br><span class="line">map = folium.Map(location=map_center, zoom_start=zoom_level)</span><br><span class="line">map.add_ee_layer(landcover, landcover_vis, &#x27;Land Cover&#x27;)</span><br><span class="line"></span><br><span class="line"># 显示地图</span><br><span class="line">map.save(&#x27;landcover_map.html&#x27;)</span><br><span class="line">print(&quot;Map saved as &#x27;landcover_map.html&#x27;&quot;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>我将教会你怎么找到<code>your_name</code>!!!!!!!</strong></p>
+<p><a target="_blank" rel="noopener" href="https://imgse.com/i/pEU4O7F"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://s21.ax1x.com/2025/03/13/pEU4O7F.png" alt="pEU4O7F.png"></a></p>
+<p>好了希望不要有下一个人和我一样卡半个月了TT</p>
 
 <div class="article-footer fs14">
     <section id="license">
@@ -124,7 +120,7 @@
     </section>
     </div>
 </article>
-<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">Newer</div><a href="/2025/02/01/%E6%9D%A5%E6%97%B6%E7%9A%84%E8%B7%AF/">来时的路</a></div><div class="item" id="next"><div class="note">Older</div><a href="/2025/01/31/hello-world/">Hello World</a></div></section></div>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"></div><div class="item" id="next"><div class="note">Older</div><a href="/2025/03/03/%E9%80%9F%E9%80%9AArcgis/">速通Arcgis</a></div></section></div>
 
 
 
@@ -134,7 +130,14 @@
 <footer class="page-footer footnote"><hr><div class="text"><p>本站由 <a href="/">QD</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.29.1">Stellar 1.29.1</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
 </div></footer>
 <div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
-</aside><div class='float-panel blur'>
+<div class="widgets">
+
+
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">On This Page</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AE%BApython%E6%9C%AC%E5%9C%B0Google-Earth-Engine-api%E5%88%B0%E5%BA%95%E8%AF%A5%E5%A6%82%E4%BD%95%E9%85%8D%E7%BD%AE"><span class="toc-text">论python本地Google Earth Engine api到底该如何配置</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE"><span class="toc-text">基础环境配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95API"><span class="toc-text">测试API</span></a></li></ol></li></ol></div><div class="widget-footer">
+
+<a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12c0-4.714 0-7.071 1.464-8.536C4.93 2 7.286 2 12 2c4.714 0 7.071 0 8.535 1.464C22 4.93 22 7.286 22 12c0 4.714 0 7.071-1.465 8.535C19.072 22 16.714 22 12 22s-7.071 0-8.536-1.465C2 19.072 2 16.714 2 12Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/></g></svg><span>Scroll to Top</span></a></div></widget>
+</div></aside><div class='float-panel blur'>
   <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
   </button>
